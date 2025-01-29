@@ -1,0 +1,64 @@
+/* Table container styling */
+table {
+  width: 100%;
+  border-color: black;
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Header row styling */
+th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  padding: 12px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Table cell styling */
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Make the first column sticky */
+td:first-child, th:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+  z-index: 2; /* Ensure first column stays above other cells */
+}
+
+/* Hover effect for rows */
+tr:hover {
+  background-color: #f1f1f1;
+  cursor: default;
+}
+
+/* Responsive table for smaller screens */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
